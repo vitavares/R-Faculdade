@@ -1,51 +1,51 @@
 "nr" "ec" "gi" "nf" "sa" "rp" "id"
 1 "Solteiro" "Ensino Fundamental" NA 4 "Interior" 315
-2 "Solteiro" "Ensino Médio" NA 9,4 "Outra" 464
-3 "Casado" "Ensino Médio" 1 9,8 "Capital" 379
+2 "Solteiro" "Ensino Medio" NA 9,4 "Outra" 464
+3 "Casado" "Ensino Medio" 1 9,8 "Capital" 379
 4 "Casado" "Ensino Fundamental" 2 9,8 "Outra" 475
 5 "Solteiro" "Superior" NA 10,5 "Interior" 308
-6 "Solteiro" "Ensino Médio" NA 10,8 "Interior" 448
-7 "Casado" "Ensino Médio" 1 11,1 "Outra" 369
-8 "Solteiro" "Ensino Médio" NA 11,6 "Capital" 410
+6 "Solteiro" "Ensino Medio" NA 10,8 "Interior" 448
+7 "Casado" "Ensino Medio" 1 11,1 "Outra" 369
+8 "Solteiro" "Ensino Medio" NA 11,6 "Capital" 410
 9 "Casado" "Superior" 0 12,8 "Outra" 313
 10 "Solteiro" "Ensino Fundamental" NA 12 "Outra" 492
-11 "Casado" "Ensino Médio" 2 13,2 "Interior" 389
+11 "Casado" "Ensino Medio" 2 13,2 "Interior" 389
 12 "Solteiro" "Superior" NA 16,2 "Outra" 377
 13 "Solteiro" "Ensino Fundamental" NA 13,9 "Outra" 559
-14 "Casado" "Ensino Médio" 0 14,7 "Interior" 356
-15 "Casado" "Ensino Médio" 5 14,7 "Interior" 486
-16 "Casado" "Ensino Médio" 2 16 "Capital" 430
-17 "Casado" "Ensino Médio" 2 13,6 "Outra" 420
-18 "Casado" "Ensino Médio" 1 16,6 "Interior" 436
+14 "Casado" "Ensino Medio" 0 14,7 "Interior" 356
+15 "Casado" "Ensino Medio" 5 14,7 "Interior" 486
+16 "Casado" "Ensino Medio" 2 16 "Capital" 430
+17 "Casado" "Ensino Medio" 2 13,6 "Outra" 420
+18 "Casado" "Ensino Medio" 1 16,6 "Interior" 436
 19 "Casado" "Superior" 3 17,3 "Capital" 523
 20 "Casado" "Superior" 3 23,3 "Interior" 506
-21 "Casado" "Ensino Médio" 2 19,4 "Capital" 587
+21 "Casado" "Ensino Medio" 2 19,4 "Capital" 587
 22 "Solteiro" "Superior" NA 18,8 "Capital" 403
 23 "Casado" "Ensino Fundamental" 2 4,8 "Capital" 357
 24 "Solteiro" "Superior" NA 17,4 "Capital" 355
 25 "Solteiro" "Superior" NA 6,1 "Capital" 431
-26 "Casado" "Ensino Médio" 2 7,2 "Interior" 307
+26 "Casado" "Ensino Medio" 2 7,2 "Interior" 307
 27 "Casado" "Superior" 1 7,8 "Interior" 464
-28 "Solteiro" "Ensino Médio" NA 8,4 "Capital" 359
+28 "Solteiro" "Ensino Medio" NA 8,4 "Capital" 359
 29 "Casado" "Superior" 1 9,5 "Capital" 470
 30 "Casado" "Superior" 2 20 "Capital" 399
 31 "Solteiro" "Superior" NA 12,5 "Interior" 418
-32 "Solteiro" "Ensino Médio" NA 14,9 "Interior" 339
+32 "Solteiro" "Ensino Medio" NA 14,9 "Interior" 339
 33 "Casado" "Superior" 1 16,5 "Interior" 420
-34 "Casado" "Ensino Médio" 3 5,4 "Capital" 489
+34 "Casado" "Ensino Medio" 3 5,4 "Capital" 489
 35 "Casado" "Superior" 2 17,5 "Capital" 401
 36 "Casado" "Superior" 2 10,2 "Outra" 318
 37 "Casado" "Ensino Fundamental" 1 4,6 "Capital" 394
-38 "Solteiro" "Ensino Médio" NA 5,7 "Outra" 250
+38 "Solteiro" "Ensino Medio" NA 5,7 "Outra" 250
 39 "Solteiro" "Ensino Fundamental" NA 6,9 "Interior" 492
 40 "Casado" "Ensino Fundamental" 2 5,3 "Capital" 437
 41 "Solteiro" "Ensino Fundamental" NA 6,3 "Outra" 487
 42 "Casado" "Ensino Fundamental" 0 6,7 "Interior" 336
-43 "Solteiro" "Ensino Médio" NA 7,4 "Outra" 282
-44 "Solteiro" "Ensino Médio" NA 8,7 "Outra" 449
+43 "Solteiro" "Ensino Medio" NA 7,4 "Outra" 282
+44 "Solteiro" "Ensino Medio" NA 8,7 "Outra" 449
 45 "Casado" "Ensino Fundamental" 3 9 "Outra" 530
-46 "Casado" "Ensino Médio" 0 9,1 "Interior" 365
+46 "Casado" "Ensino Medio" 0 9,1 "Interior" 365
 47 "Solteiro" "Ensino Fundamental" NA 7,4 "Capital" 520
-48 "Casado" "Ensino Médio" 1 7,6 "Capital" 418
+48 "Casado" "Ensino Medio" 1 7,6 "Capital" 418
 49 "Solteiro" "Ensino Fundamental" NA 8,5 "Capital" 335
-50 "Casado" "Ensino Médio" 2 8,1 "Interior" 402
+50 "Casado" "Ensino Medio" 2 8,1 "Interior" 402
