@@ -25,6 +25,7 @@ fitl2a = survfit(fitl2, newdata = sex_df, data = lung)
 fitl2a
 ggsurvplot(fitl2a, conf.int = T)
 
+#Modelo de cox
 coxtest = cox.zph(fitl2, transform = "identity", terms = F)
 print(coxtest)
 ggcoxzph(coxtest)
