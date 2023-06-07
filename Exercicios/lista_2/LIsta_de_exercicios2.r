@@ -38,16 +38,22 @@ vendas = cbind(vendas, lucro)
 rm(lucro)
 
 # Item E:
+f = function(){
+  attach(vendas)
+  min = round(tapply(lucro, ano, min),2)
+  media = tapply(lucro, ano, mean)
+  mediana = tapply(lucro, ano, median)
+  maximo = tapply(lucro, ano, max)
+  desvio = tapply(lucro, ano, sd)
+  geral = c(min,media,mediana,maximo,desvio)
+  detach(vendas)
+  return(geral)
+}
+aux = f()
 
-
-
-
-
-
-
-
-
-
+# Item F:
+lucro_anual = matrix(data = aux, nrow = 5, ncol = 3, byrow = T, dimnames = list(c('Mínimo','Média','Mediana','Máximo','Desvio Padrão'), c('2017','2018','2019')))
+lucro_anual
 
 
 
