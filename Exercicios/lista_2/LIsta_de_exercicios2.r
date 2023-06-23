@@ -55,5 +55,4 @@ aux = f()
 lucro_anual = matrix(data = aux, nrow = 5, ncol = 3, byrow = T, dimnames = list(c('Mínimo','Média','Mediana','Máximo','Desvio Padrão'), c('2017','2018','2019')))
 lucro_anual
 
-
-
+# Item E

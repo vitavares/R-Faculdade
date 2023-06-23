@@ -18,3 +18,12 @@ limites <- c(0, 2, 4, 6, 8, 10)
 intervalos <- paste(limites[-length(limites)], limites[-1], sep = "-")
 barplot(FAT, names.arg = intervalos, main = "Histograma - Antes do Treinamento", xlab = "Pontuação", ylab = "Frequência", col = "blue")
 barplot(FDT, names.arg = intervalos, main = "Histograma - Depois do Treinamento", xlab = "Pontuação", ylab = "Frequência", col = "red")
+
+# Questão 3
+dados <- c(7.8, 8.2, 10.5, 11.2, 11.5, 12.2, 12.5, 13.1, 13.9, 14.1, 14.2, 14.5,
+           14.9, 15.1, 15.8, 15.9, 16.0, 16.2, 16.7, 16.9, 17.2, 17.4, 17.6, 18.4,
+           19.1, 19.5, 20.5, 21.6, 22.1)
+hist(dados, breaks = seq(7, 23, by = 2), col = "lightblue", border = "black",
+     xlab = "Valores", ylab = "Frequência", main = "Histograma")
+freq <- table(cut(dados, breaks = seq(7, 23, by = 2)))
+text(x = as.numeric(names(freq)), y = freq + 1, labels = freq, pos = 3, col = "black")
