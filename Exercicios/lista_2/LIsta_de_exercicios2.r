@@ -30,7 +30,7 @@ ls()
 
 # Item C:
 attach(vendas)
-lucro = quantidade * valor * margem
+lucro = round((quantidade * valor * margem), 2)
 detach(vendas)
 
 # Item D:
@@ -56,3 +56,27 @@ lucro_anual = matrix(data = aux, nrow = 5, ncol = 3, byrow = T, dimnames = list(
 lucro_anual
 
 # Item E
+par(mfrow = c(2, 3))
+hist(vendas$lucro[vendas$ano == 2017], main = "Ano 2017", xlab = "Lucro", col = "blue")
+hist(vendas$lucro[vendas$ano == 2018], main = "Ano 2018", xlab = "Lucro", col = "green")
+hist(vendas$lucro[vendas$ano == 2019], main = "Ano 2019", xlab = "Lucro", col = "red")
+boxplot(vendas$lucro[vendas$ano == 2017], main = "Ano 2017", ylab = "Lucro", col = "blue")
+boxplot(vendas$lucro[vendas$ano == 2018], main = "Ano 2018", ylab = "Lucro", col = "green")
+boxplot(vendas$lucro[vendas$ano == 2019], main = "Ano 2019", ylab = "Lucro", col = "red")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
