@@ -1,4 +1,5 @@
 # Lista 3
+# Vitória de sousa tavares
 rm(list = ls())
 
 # Questão 1
@@ -51,56 +52,46 @@ f = function(x){
 f = function(x, y, type){
   n = length(x)
   if(n > 1){
-    switch (type, 'diag_dispercao' = plot(x, y, main = 'Diagrama de disperção', pch = 19),
+    switch (type, 'diagrama_dispercao' = plot(x, y, main = 'Diagrama de disperção', pch = 19),
             'expresao' = c('->Fórmula dada' = (sum(x*y) - n*mean(x)*mean(y))/sqrt((sum(x^2) - n*(mean(x)^2))*(sum(y^2) - n*(mean(y)^2))),
             '->Coeficiente de correlação' = cor(x, y, method = 'pearson')))
   }
 }
 # 6a
 X = c(60, 65, 71, 69, 76, 71, 79, 90, 94, 92); Y = c(61, 62, 64, 68, 70, 67, 75, 76, 81, 82)
-f(X, Y, type = 'diag_dispercao')
+f(X, Y, type = 'diagrama_dispercao')
 f(X, Y, type = 'expresao')
 # 6b
 X = c(60, 65, 71, 64, 76, 71, 79, 86, 94, 92); Y = c(79, 77, 76, 78, 75, 76, 75, 76, 78, 79)
-f(X, Y, type = 'diag_dispercao')
+f(X, Y, type = 'diagrama_dispercao')
 f(X, Y, type = 'expresao')
 # 6c
 X = c(75, 79, 69, 64, 76, 71, 81, 86, 91, 85); Y = c(79, 77, 76, 78, 75, 76, 75, 76, 78, 79)
-f(X, Y, type = 'diag_dispercao')
+f(X, Y, type = 'diagrama_dispercao')
 f(X, Y, type = 'expresao')
 
 # Questão 7
 rm(list = ls())
 
-# Dados extraídos do livro Estatística básica / Pedro A. Morettin, 
-# Wilton O. Bussab. – 9. ed. – São Paulo: Saraiva, 2017
-
-# Exemplo de associação linear direta entre as variáveis X: anos de serviço e
-# Y: número de clientes de agentes de uma companhia de seguros
+# Associação linear direta
 anos_servico = c(2,3,4,5,4,6,7,8,8,10)
 numero_clientes = c(48,50,56,52,43,60,62,58,64,72)
-plot(anos_servico, numero_clientes, pch = 19, main = 'Diagrama de disperção para
-     as variáveis X: anos de serviço e Y: número de clientes', 
-     xlab = 'anos de serviço', ylab = 'núimero de clientes')
+plot(anos_servico, numero_clientes, pch = 19, main = 'Anos de serviço Número de clientes', 
+     xlab = 'Anos de serviço', ylab = 'Núimero de clientes')
 cor(anos_servico, numero_clientes, method = 'pearson')
 
-# Exemplo de associação linear inversa entre as variáveis X: renda bruta e
-# Y: gasto com saúde dada em porcentagem em relação a renda bruta
+# Associação linear inversa
 renda_bruta = c(12,16,18,20,28,30,40,48,50,54)
 gasto_saude = c(7.2,7.4,7.0,6.5,6.6,6.7,6.0,5.6,6.0,5.5)
-plot(renda_bruta, gasto_saude, pch = 19, main = 'Diagrama de disperção para
-     as variáveis X: renda bruta e Y: % gasto com saúde', 
-     xlab = 'renda bruta', ylab = '% gasto com saúde')
+plot(renda_bruta, gasto_saude, pch = 19, main = 'Renda bruta X Gasto com saúde', 
+     xlab = 'Renda bruta', ylab = 'Gasto com saúde %')
 cor(renda_bruta, gasto_saude, method = 'pearson')
 
-# Exemplo de não associação linear entre as variáveis X: resultado em um teste
-# de conhecimento de língua estrangeira e Y: tempo gasto para cada indivíduo
-# aprender a operar a máquina
+# Não associação linear
 resultado_teste = c(45,52,61,70,74,76,80,90)
 tempo_operacao = c(343,368,355,334,337,381,345,375)
-plot(resultado_teste, tempo_operacao, pch = 19, main = 'Diagrama de disperção para
-     as variáveis X: resultado de um teste e Y: tempo de operação de máquina', 
-     xlab = 'resultado do teste', ylab = 'tempo')
+plot(resultado_teste, tempo_operacao, pch = 19, main = 'Resultado de um teste X Tempo de operação de máquina', 
+     xlab = 'Resultado do teste', ylab = 'Tempo')
 cor(resultado_teste, tempo_operacao, method = 'pearson')
 
 # Questão 8
@@ -109,7 +100,7 @@ rm(list = ls())
 f1 = function(x) dnorm(x, 500, 100)
 f2 = function(x) dnorm(x, 500, 50)
 
-plot(f2, main = 'Figura 1 - Curvas da densidade normal',
+plot(f2, main = 'Curvas da densidade normal',
      ylab = 'densidade', xlab = '', xlim = c(100, 900),
      lwd = 2,xaxp = c(100,900,8))
 axis(side = 1, xaxp = c(200,800,3), lwd = 2)
@@ -135,12 +126,9 @@ hist(amostra, main = 'Figura 2 - Distribuição Normal: histograma e densidade',
 curve(f, add = TRUE)
 
 # Questão 10
-rm(list = ls())
-
 library(dslabs)
 data(murders)
 attach(murders)
-
 xtabs(total/sum(total)*100~state)
 Gb = boxplot(total, horizontal = TRUE, xlab = 'Quantidade de assassinatos', 
         main = 'Figura 3 - Boxplot para a variável assassinatos por arma de fogo',
@@ -148,5 +136,3 @@ Gb = boxplot(total, horizontal = TRUE, xlab = 'Quantidade de assassinatos',
 abline(v = Gb$stats, lty = 2)
 
 detach(murders)
-
-# Questão 11
